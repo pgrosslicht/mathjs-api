@@ -11,7 +11,7 @@ function respond(req, res, next) {
 }
 
 var server = restify.createServer({});
-server.use(restify.bodyParser());
+server.use(restify.plugins.bodyParser());
 server.post('/eval', respond);
 
 server.listen(8080, function() {

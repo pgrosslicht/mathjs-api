@@ -10,7 +10,7 @@
   "author": "Patrick Grosslicht",
   "license": "ISC",
   "dependencies": {
-    "mathjs": "^3.8.0",
-    "restify": "^4.3.0"
+    "mathjs": "^3.18.0",
+    "restify": "^6.3.0"
   }
 }
