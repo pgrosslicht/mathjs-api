@@ -1,7 +1,3 @@
-/**
- * Created by patrickgrosslicht on 02/11/16.
- */
-
 var restify = require('restify');
 var math = require('mathjs');
 
@@ -10,7 +6,10 @@ function respond(req, res, next) {
     next();
 }
 
-var server = restify.createServer({});
+var server = restify.createServer({
+    handleUncaughtExceptions: true
+});
+
 server.use(restify.plugins.bodyParser());
 server.post('/eval', respond);
 
